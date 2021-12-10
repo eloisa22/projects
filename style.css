@@ -1,0 +1,28 @@
+    <style>
+
+body{
+ margin: 50px; background-color: #212121; color :white; font-size: 20px;} 
+
+h1{word-spacing: 10px;
+  font-variant: small-caps;
+  text-align: center;
+  font-size:50px;
+  color:#4FC3F7;
+}
+
+p{font-size: 20px;
+  color:k#37474F; font-family: Arial, Helvetica, sans-serif;}
+
+h2{text-align:center;
+color:#F8BBD0;font-variant: small-caps;}
+
+b{color:#F8BBD0;}
+
+img{text-align : center;
+  border: 5px solid #cccccc;}
+
+div{text-align : center;
+  }
+
+em{color:#F8BBD0;}
+</style>
