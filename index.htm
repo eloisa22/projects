@@ -1,22 +1,91 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>REGISTRATION FORM Yianna Katherina Yap</title>
-     <link rel="stylesheet" href="style.css">
-<script src="main.js"></script>
-    </head>
-  
-  <body>
-<h1>Registration Form</h1>
-    <div> Name of the student
-     <input class="ibox" id="name">
-    </div>
-
-    <div> Grade and Section
-      <input   class="ibox" id="grade-and-sec">
-    </div>
-<br>
-    
-    <button id="button1" onclick="add()">ENTER</button>
-  </body>
-</html>
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    <title>REGISTRATION FORM</title>     <link rel="stylesheet" href="style.css">
+<script type="text/JavaScript">   
+        function CalcAdd() {    
+            //to set the DIV tag contents    
+            document.getElementById("pMemberName").innerText= document.getElementById("txtMemberName").value;    
+            document.getElementById("pMemberMobile").innerText = document.getElementById("txtMemberMobile").value;    
+            document.getElementById("pMemberBirthDate").innerText = document.getElementById("txtMemberBirthDate").value;    
+            document.getElementById("pMemberGender").innerText = document.getElementById("ddlGender").options[document.getElementById("ddlGender").selectedIndex].text;    
+           document.getElementById("ptxtGradeSection").innerText = document.getElementById("txtGradeSection").value;      
+        }    
+    </script>    
+      
+</head>    
+<body>    
+    <h1>Registration Form</h1>    
+    <br />    
+    <table>    
+        <tr>    
+            <td>    
+               Student Name:    
+            </td>    
+            <td>    
+                <input id="txtMemberName" type="text" />    
+            </td>    
+        </tr>    
+        <tr>    
+            <td>Mobile: </td>    
+            <td><input id="txtMemberMobile" type="text" /></td>    
+        </tr>    
+        <tr>    
+            <td>Birth Date: </td>    
+            <td><input id="txtMemberBirthDate" type="text" /></td>    
+        </tr>
+        <tr>    
+            <td>Grade and Section</td>    
+          <td><input id="txtGradeSection" type="text" /></td>      
+                  
+            </td>    
+        </tr>      
+        <tr>    
+            <td>Gender</td>    
+            <td>    
+                <select id="ddlGender">    
+                    <option>Male</option>    
+                    <option>Female</option>    
+                </select>    
+            </td>    
+        </tr>    
+       
+        <tr>    
+            <td colspan="2" align="center">    
+                <input type="button" name="clickbtn" value="Submit" onClick="CalcAdd()" style="font-size:19px;" />    
+            </td>    
+        </tr>    
+    </table>    
+    <br />    
+    <br />    
+        
+    <table id="tbl" >    
+        <tr>    
+            <td>    
+                <b> Student Name -----></b>    
+            </td>    
+            <td>    
+                <p id="pMemberName"></p>    
+            </td>    
+        </tr>    
+        <tr>    
+            <td><b>Mobile -----></b></td>    
+            <td><p id="pMemberMobile"></p></td>    
+        </tr>    
+        <tr>    
+            <td><b>Birth Date -----></b></td>    
+            <td><p id="pMemberBirthDate" > </p></td>    
+        </tr>    
+        <tr>    
+            <td><b>Gender -----></b></td>    
+            <td><p id="pMemberGender"></p></td>        
+        </tr>    
+        <tr>    
+            <td><b>Civil Status -----></b></td>    
+            <td><p id="ptxtGradeSection"></p></td>    
+        </tr>    
+    </table>    
+    <br><p>Prepared by Yianna Katherina Yap</p>
+</body>    
+</html>   
